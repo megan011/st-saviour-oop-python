@@ -9,3 +9,6 @@ class Cupcake(BakedGoods):
 
     def decorate(self):
         print(f"The cupcake is decorated with {self.frosting} frosting!")
+
+    def __str__(self):
+        return f'flavor: {self.flavor}, frosting: {self.frosting}, liner: {self.liner}'
